@@ -1,74 +1,56 @@
- 📬 Email Reply Generator Assistant
 
-A Chrome extension integrated with a Spring Boot backend to generate **smart email replies** directly within **Mail.com**.
+# 📬 Email Reply Generator Assistant
 
-This project runs **locally** and demonstrates the integration between frontend browser technologies and Java-based backend services.
-
----
-
-## 🚀 Features
-
-- ✅ Chrome Extension UI with easy Mail.com integration  
-- ✅ Spring Boot backend serving smart auto-replies via REST API  
-- ✅ Content script injection into Mail.com for enhanced automation  
-- ✅ Locally hosted and fully functional without deployment  
+This is a local project combining a **Spring Boot backend** and a **Chrome extension** to generate smart AI-based email replies for Gmail.
 
 ---
 
-## 🗂️ Project Structure
+## 🧩 How It Works
 
-email-reply-generator-assistant/
-│
-├── chrome-extension/ # Chrome Extension files (manifest, scripts, popup, etc.)
-│ ├── manifest.json
-│ ├── popup.html
-│ ├── popup.js
-│ └── ...
-│
-├── spring-boot-backend/ # Java Spring Boot REST API
-│ ├── src/
-│ ├── pom.xml
-│ └── ...
-│
-└── README.md # You're reading it!
+- Spring Boot project serves as a local API to generate smart replies.
+- Chrome Extension interacts with Gmail and calls the local API to generate replies.
+- Works entirely offline on your system. No deployment required.
 
+---
 
-## 💻 How to Run This Project Locally
+## 🛠️ How to Run
 
-### 🔹 1. Run the Spring Boot Backend
+### 1. Spring Boot Backend
 
-This backend provides the API that generates smart email replies.
+1. Download or clone the repository.
+2. Navigate to the `spring-boot-backend` folder.
+3. Run the backend with:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+4. The API will run on `http://localhost:8080`.
 
-#### Steps:
-```bash
-cd spring-boot-backend
-./mvnw spring-boot:run
-The API will run locally at: http://localhost:8080
-```
-🔹 2. Load the Chrome Extension in Developer Mode
-This extension integrates with your Mail.com inbox and uses the backend API.
+### 2. Chrome Extension
 
-Steps:
-Open Chrome and go to: chrome://extensions/
+1. Open Chrome and go to: `chrome://extensions/`
+2. Enable **Developer Mode** (top-right).
+3. Click **Load unpacked**.
+4. Select the `chrome-extension` folder.
+5. Open Gmail and use the extension to generate AI replies.
 
-Enable Developer Mode (toggle in top-right corner)
+---
 
-Click Load unpacked
+## ✅ Notes
 
-Select the chrome-extension/ folder inside the project
+- This project runs locally and does not require any server deployment.
+- Works with Gmail website only.
+- Requires Java + Maven installed on your system.
 
-Visit your Mail.com inbox — the extension should activate (via popup or UI injection)
+---
 
-💡 Make sure the extension has permission to run on https://mail.com/* in manifest.json.
+## 👨‍💻 Author
 
-🧪 Demo
-🎥 A demo video of this project is available in my LinkedIn post:
-👉 Watch the Demo on LinkedIn
+**Santhosh L**
 
-🔗 GitHub Repository
-👉 https://github.com/santhosh-l-code/email-reply-generator-assistant
+📎 [LinkedIn](https://www.linkedin.com/in/your-profile)
 
-🙋 Author
-Santhosh L
-📧 Open to feedback and collaborations!
-🖇️ LinkedIn
+---
+
+## 🔗 GitHub
+
+[https://github.com/santhosh-l-code/email-reply-generator-assistant](https://github.com/santhosh-l-code/email-reply-generator-assistant)
