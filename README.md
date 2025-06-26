@@ -47,7 +47,7 @@ This is a local project combining a **Spring Boot backend** and a **Chrome exten
 
 **Santhosh L**
 
-📎 [LinkedIn](https://www.linkedin.com/in/your-profile)
+📎 [LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/feed/update/urn:li:activity:7343882957226475521/))
 
 ---
 
