@@ -1,4 +1,4 @@
-# 📬 Email Reply Generator Assistant
+ 📬 Email Reply Generator Assistant
 
 A Chrome extension integrated with a Spring Boot backend to generate **smart email replies** directly within **Mail.com**.
 
@@ -8,10 +8,10 @@ This project runs **locally** and demonstrates the integration between frontend 
 
 ## 🚀 Features
 
-- ✅ Chrome Extension UI with easy Mail.com integration
-- ✅ Spring Boot backend serving smart auto-replies via REST API
-- ✅ Content script injection into Mail.com for enhanced automation
-- ✅ Locally hosted and fully functional without deployment
+- ✅ Chrome Extension UI with easy Mail.com integration  
+- ✅ Spring Boot backend serving smart auto-replies via REST API  
+- ✅ Content script injection into Mail.com for enhanced automation  
+- ✅ Locally hosted and fully functional without deployment  
 
 ---
 
@@ -32,6 +32,9 @@ email-reply-generator-assistant/
 │
 └── README.md # You're reading it!
 
+yaml
+Copy code
+
 ---
 
 ## 💻 How to Run This Project Locally
@@ -41,38 +44,30 @@ email-reply-generator-assistant/
 This backend provides the API that generates smart email replies.
 
 #### Steps:
-1. Navigate to the backend folder:
-   ```bash
-   cd spring-boot-backend
-2.Run the Spring Boot application:
+```bash
+cd spring-boot-backend
 ./mvnw spring-boot:run
+The API will run locally at: http://localhost:8080
 
-3.The API will run locally at:
-http://localhost:8080
-
-
- 2. Load the Chrome Extension in Developer Mode
-This extension integrates with your Mail.com inbox and uses the above API.
+🔹 2. Load the Chrome Extension in Developer Mode
+This extension integrates with your Mail.com inbox and uses the backend API.
 
 Steps:
+Open Chrome and go to: chrome://extensions/
 
-1.Open Chrome and go to:
-chrome://extensions/
+Enable Developer Mode (toggle in top-right corner)
 
-2.Enable Developer Mode (toggle in top-right corner)
+Click Load unpacked
 
-3.Click Load unpacked
+Select the chrome-extension/ folder inside the project
 
-4.Select the chrome-extension/ folder inside the project
+Visit your Mail.com inbox — the extension should activate (via popup or UI injection)
 
-5.Now visit your Mail.com inbox. The extension should activate (e.g., via a popup or injected content)
-
+💡 Make sure the extension has permission to run on https://mail.com/* in manifest.json.
 
 🧪 Demo
-This project is currently intended for local use and learning purposes.
 🎥 A demo video of this project is available in my LinkedIn post:
-
-👉 [Watch the Demo on LinkedIn](https://www.linkedin.com/posts/your-post-id)
+👉 Watch the Demo on LinkedIn
 
 🔗 GitHub Repository
 👉 https://github.com/santhosh-l-code/email-reply-generator-assistant
@@ -81,3 +76,23 @@ This project is currently intended for local use and learning purposes.
 Santhosh L
 📧 Open to feedback and collaborations!
 🖇️ LinkedIn
+
+📄 License
+This project is open-source and available under the MIT License.
+
+yaml
+Copy code
+
+---
+
+✅ Just update `your-post-id` with your actual LinkedIn post URL and `your-profile` with your profile slug.
+
+Let me know if you'd like to add [GIF demos](f), a [live preview video](f), or [dark/light mode badges](f).
+
+
+
+
+
+
+
+
