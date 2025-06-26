@@ -32,10 +32,6 @@ email-reply-generator-assistant/
 │
 └── README.md # You're reading it!
 
-yaml
-Copy code
-
----
 
 ## 💻 How to Run This Project Locally
 
@@ -48,7 +44,7 @@ This backend provides the API that generates smart email replies.
 cd spring-boot-backend
 ./mvnw spring-boot:run
 The API will run locally at: http://localhost:8080
-
+```
 🔹 2. Load the Chrome Extension in Developer Mode
 This extension integrates with your Mail.com inbox and uses the backend API.
 
@@ -76,23 +72,3 @@ Visit your Mail.com inbox — the extension should activate (via popup or UI inj
 Santhosh L
 📧 Open to feedback and collaborations!
 🖇️ LinkedIn
-
-📄 License
-This project is open-source and available under the MIT License.
-
-yaml
-Copy code
-
----
-
-✅ Just update `your-post-id` with your actual LinkedIn post URL and `your-profile` with your profile slug.
-
-Let me know if you'd like to add [GIF demos](f), a [live preview video](f), or [dark/light mode badges](f).
-
-
-
-
-
-
-
-
