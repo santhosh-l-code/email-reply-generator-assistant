@@ -55,6 +55,7 @@ http://localhost:8080
 This extension integrates with your Mail.com inbox and uses the above API.
 
 Steps:
+
 1.Open Chrome and go to:
 chrome://extensions/
 
